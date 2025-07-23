@@ -1,0 +1,7 @@
+shiny-travel/
+├── index.html
+├── style.css
+├── spain.html
+├── france.html
+└── js/
+    └── script.js
