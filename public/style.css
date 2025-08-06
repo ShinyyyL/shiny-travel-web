@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Shrikhand&display=swap');
+
+/* 選單bar*/ /*main 標題*/ /*標題*/
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f25c54;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-header h1 {
+  margin: 0;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.8rem;
+}
+
+.menu-icon, .home-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: #fff3e0;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  margin: 1rem 0;
+}
+
+.side-menu a {
+  color: #e23e38;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.side-menu a:hover {
+  color: #b52c24;
+}
+
+.page-title {
+  padding: 2rem 1rem;
+  background-color: #fff4e6;
+  color: #444;
+}
+
+.main-heading {
+  font-size: 2.6rem;
+  color: #f25c54;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.emoji_bling .emoji_plane {
+  font-size: 1.6em;
+  margin-left: 0.3rem;
+}
+
+.p1 {
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  color: #444444;
+  margin-top: 0.5rem;
+}
+
+/*index內容*/
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff4e6;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #f25c54;
+  color: #fffbea;
+  padding: 3rem 1rem 2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 3.2rem;
+  margin: 0;
+  color: #fffbea;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #fff8e1;
+  margin-top: 0.5rem;
+}
+
+.travel-list {
+  list-style: none;
+  padding: 0;
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+.travel-list li {
+  margin: 1.5rem 0;
+  background-color: #ffffff;
+  border: 2px solid #f25c54;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.travel-list li:hover {
+  transform: rotate(-1deg) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #fff0e0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #e23e38;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #c52f28;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 4rem;
+  color: #999;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+/*版面字體大小依裝置自動調整*/
+@media (max-width: 600px) {
+  body {
+    font-size: 110%; /* 讓整體字放大一點 */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .travel-list li {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}

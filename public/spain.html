@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>西班牙遊記 | Shiny’s Travel Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
+  <!-- GA4 Script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQT6ER6EPK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LQT6ER6EPK');
+  </script>
+</head>
+<body>
+  <!-- 📌 頁面標頭含選單按鈕＋首頁按鈕 -->
+  <header class="nav-header">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1 class="nav-title">Shiny Travel</h1>
+    <a href="index.html" class="home-icon">
+      <img src="images/home.png" style="width: 36px; height: auto;">    
+    </a>
+  </header>
+
+  <!-- 🟧 側邊選單 -->
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">🏠 首頁</a></li>
+      <li>
+      <a href="spain.html">
+        <img src="images/spain.png" alt="西班牙" style="width: 24px; vertical-align: middle; margin-right: 8px;">
+        西班牙 Spain
+      </a>
+      </li>
+      <li>
+      <a href="france.html">
+        <img src="images/france.png" alt="法國" style="width: 24px; vertical-align: middle; margin-right: 8px;">
+        法國 France
+      </a>
+      </li>
+      <li><a href="italy.html"> 義大利</a></li>
+      <!-- 可繼續加更多國家 -->
+    </ul>
+  </nav>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("active");
+  }
+  </script>
+
+  
+  <header>
+    <h1>🇪🇸 西班牙 Spain</h1>
+  </header>
+
+  <main>
+    <p>這是我在西班牙交換時最愛的城市：Barcelona, Sevilla, Madrid... ❤️</p>
+    <p>我超喜歡西班牙的陽光、美食與人情味！</p>
+    <a href="index.html">← 回首頁</a>
+  </main>
+</body>
+</html>
