@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    <img src="game/watermelon.png" style="width: 36px; height: auto;">
+    收集水果小遊戲
+</title>
+<p id="loadingText">🍓 圖片載入中...請稍候！</p>
+
+  <style>
+    body {
+      background: #fdf6e3;
+      text-align: center;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      border: 3px solid #ffb347;
+      background-color: #fff5e6;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1> 
+    <img src="game/strawberry.png" style="width: 36px; height: auto;">
+    來收集水果吧！
+</h1>
+
+  <p>用 ← → 鍵移動背包，接住掉下來的水果</p>
+
+  <button id="startBtn" style="display: none;">
+    <img src="game/grapes.png" style="width: 36px; height: auto;">
+     點我開始遊戲</button>
+  <canvas id="gameCanvas" width="500" height="400"></canvas>
+  <script src="game/fruit_game.js"></script>
+  <br><br>
+  <a href="index.html">⬅️ 回首頁</a>
+</body>
+</html>
