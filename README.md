@@ -17,6 +17,7 @@
 ## 2️⃣ 檢查修改狀態
 ```bash
 cd "C:\Users\Shiny lin\Desktop\travel_web"
+cd C:\Users\88695\OneDrive\Desktop\travel_web
 git status
 
 ## 3️⃣ 查修改狀態
