@@ -26,7 +26,8 @@ git add .
 ## 4️⃣ 建立 Commit
 git commit -m "更新首頁內容與樣式"
 
-## 5️⃣ 推送到 GitHub
+## 5️⃣ 先拉下來再推送上 GitHub
+git pull origin main --rebase
 git push origin main
 
 ## 6️⃣ 等待 GitHub Actions 自動部署
